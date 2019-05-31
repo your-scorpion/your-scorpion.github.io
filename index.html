@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="img/favico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favico/favicon-16x16.png" sizes="16x16">
+    <!-- Theme tittle -->
+    <title>Figma JSON generator</title> 
+    
+    <!-- Theme style CSS -->       
+    <link href="css/style.css" rel="stylesheet">    
+    <link href="css/styles.css" rel="stylesheet">  
+
+
+
+</head>
+<body> 
+    <!-- Header Area -->
+    <header class="main_header_area"> 
+       <div class="container"> 
+            <nav class="navbar navbar-expand-lg"> 
+                <!-- Small Divice Menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"  aria-label="Toggle navigation"> 
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button> 
+                <div class="collapse navbar-collapse navbar_supported">                                   
+
+                    <ul class="navbar-nav"> 
+                        <li><a href="https://www.facebook.com/yourscorpion" target="_blank">Facebook</a></li>
+                        <li class="dropdown">
+                        </li>  
+                        <li><a href="https://medium.com/@Max_Tsvetkov" target="_blank">Articles</a></li>   
+                        
+                        <li> <div id="dropdown-selector"><i class="icon-m_JSON" id="selected-icon"> <a href="https://www.figma.com/developers" target="_blank" class="theme_btn">Figma api</a></li>       
+                    </ul>   
+                </div>
+            </nav>  
+       </div> 
+    </header>
+    <!-- Header Area -->  
+    
+    <!-- Banner Area -->   
+    <section class="banner_area">   
+       <img src="images/banner-shap-1.png" alt="" class="shap_1">
+       <img src="images/banner-shap-2.png" alt="" class="shap_2">
+       <img src="images/favicon.png" alt="" class="shap_3">
+       <img src="images/banner-shap-3.png" alt="" class="shap_4">
+        <div class="container">
+            <div class="banner_caption"> 
+				<h2 class="wow fadeInUp">JSON Figma Generator</h2>
+				<p class="wow fadeInUp" data-wow-delay="0.21s">You need to input your <a target="_blank" href="https://www.figma.com/developers/docs#access-tokens">token</a>
+ and unique <a target="_blank" href="https://cdn-images-1.medium.com/max/2600/1*rAIVZYPr_pbCUn7nzSebmQ.png">file ID</a>.</p>
+				
+            </div> 
+               
+ <!-- How it work Area -->  
+    <section class="how_it_work_area">
+        <div class="twodises">
+
+            <p id="sidebar">
+                   <input type="text" class="form-control" name="Token" placeholder="Token: xxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx" id="token" value="" x-webkit-speech>
+                   <input type="text" class="form-control" name="ID" placeholder="ID: xxxxxxxxxxxxxxxxxxxxxxxx" id="file-id" value="you_can_generate_error_json" x-webkit-speech>
+            </p>
+
+          <p id="content">
+             <button id="accent" class="theme_btn_2 wow fadeInUp" data-wow-delay="0.5s">Generate JSON</button>
+
+          </p>
+
+ 
+
+
+        </div> 
+                                                              <div class="file-result" id="file-result">
+                                    <h1 class="file-result__name media-body" id="header_check_status">Here you will see the result</h1>
+                                    <div class="file-result__loader"></div>
+                                    <div class="file-result__image" id="checker_for_btn"></div>
+                                    <div class="file-result__json"></div>
+                                    <span class="button_for_centre">
+                                        <button class="theme_btn_3" id="copy-to-clipboard">Copy to clipboard</button>
+                                        <button class="theme_btn_3" id="save-as-json">Save as JSON</button>
+                                    </span>
+                                  </div>
+
+                                </div>
+
+
+        </div>
+
+
+
+            <img src="images/angle-shap.png" alt="" class="angle_shap">
+        </div>
+    </section>
+    <!-- End How it work Area -->  
+
+       
+        </div>  
+    </section>
+    <!-- End Banner Area -->  
+    
+   
+    
+
+     
+ 
+    
+    <!-- Testimonial Area -->  
+    <section class="testimonial_area">
+       <img src="images/testimonial-shap.png" alt="" class="shap">
+       <div class="left_style">
+          <div class="left_inner"> 
+               <img src="images/testimonial-6.png" alt="" class="img_1">
+               <img src="images/testimonial-3.png" alt="" class="img_2">
+               <img src="images/testimonial-3.png" alt="" class="img_3">
+          </div>
+       </div>
+
+
+
+
+       
+
+
+        <div class="container">
+            <div class="owl-carousel testimonial_slide"> 
+                <div class="item">
+                   <div class="testimonial_item"> 
+                        <p>You can use JSON to convert all colors from Figma to React.</p>
+                        <div class="media">
+                            <img src="images/reactlogo.png" alt="">
+                            <div class="media-body">
+                                <a target="_blank" href="https://www.figma.com/blog/introducing-figma-to-react/">Wow, how?</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="testimonial_item">  
+                        <p>Integration with Alexa and yep, you can add comments through your voice.</p>
+                        <div class="media">
+                            <img src="images/testimonial-1.png" alt="">
+                            <div class="media-body">
+                                <a target="_blank" href="https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html">Hm, show me!</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="testimonial_item"> 
+                        <p>Internal Icon Library for your Design team, like Microsoft.</p>
+                        <div class="media">
+                            <img src="images/Microsoft_Logo.png" alt="">
+                            <div class="media-body">
+                                <a target="_blank" href="https://www.figma.com/blog/learn-how-a-microsoft-designer-built-an-internal-icon-library-in-his-spare/">Let's try</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="testimonial_item">  
+                        <p>Do you like After Effects? Use your JSON through AEUX panel.</p>
+                        <div class="media">
+                            <img src="images/ae.png" alt="">
+                            <div class="media-body">
+                                <a target="_blank" href="https://aeux-55e58.firebaseapp.com/">Oh my...!</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="item">
+                   <div class="testimonial_item"> 
+                        <p>Keep all your sources offline in the text format. You will be able to get all data using a programming languages. At any time!</p>
+                        <div class="media">
+                            <img src="images/testimonial-7.png" alt="">
+                            <div class="media-body">
+                                <a href="#">So be it</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div> 
+       <div class="left_style right_style">
+          <div class="left_inner"> 
+               <img src="images/testimonial-5.png" alt="" class="img_1">
+               <img src="images/testimonial-8.png" alt="" class="img_2">
+               <img src="images/testimonial-4.png" alt="" class="img_3">
+          </div>
+       </div>
+    </section>
+
+
+
+    
+    <!-- Preloader -->  
+   <div class="preloader"></div>
+    
+    <!-- jQuery v3.4.1 -->
+    <script src="js/jquery-3.4.1.min.js"></script>    
+    <!-- Bootstrap v4.0.0 -->
+    <script src="js/bootstrap.min.js"></script>  
+    <!-- My new Plugin -->
+    <script src="vendors/animate-css/wow.min.js"></script> 
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>  
+    
+    <!-- Theme js / Custom js -->
+    <script src="js/theme.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="js/renderjson.js"></script>
+    <script async="" src="js/general-dist.js"></script>
+
+
+
+
+
+</html>
